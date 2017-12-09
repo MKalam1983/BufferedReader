@@ -1,0 +1,55 @@
+package Homework4;
+
+
+public class StringMethod {
+    public static void main(String[] args) {
+        String st = "Java is fun to learn";
+        String st1 = "LEARN";
+        String st2 = "learn";
+        String st3 = "   Mid Term Soon!!!  ";
+        String st4 = "";
+
+        char [] charArray = st1.toCharArray();
+        char [] helloArray = {'H', 'e', 'l', 'l', 'o', '.'};
+        String helloString = new String(helloArray);
+        System.out.println(helloString);
+        System.out.println(st);
+        System.out.println(" Third Character of index 2 position is: " + st.charAt(2));
+        System.out.println(" Concating two words: "+st + " " + "Programming");
+        System.out.println(" Checking equal ignoring case :" + st2.equalsIgnoreCase(st1));
+        System.out.println(" Checking equal with case :" + st1.equals(st2));
+        System.out.println(" Checking Length : " + st.length());
+        System.out.println(" Replace Function : " + st.replace("fun" , "easy"));
+        System.out.println(" Substring of original string : " + st.substring(8));
+        System.out.println(" Substring of original string : " + st.substring(8,11));
+        System.out.println(" Converting to Lower Case : " + st1.toLowerCase());
+        System.out.println(" Converting to Upper Case : " + st2.toUpperCase());
+        System.out.println(" Triming String : "+ st3.trim());
+        System.out.println(" Searching word in String : " + st.contains(st1));
+        System.out.println(" Searching word in String : " + st.contains(st2));
+        System.out.println(" The size of the char array is: " + charArray.length );
+        System.out.println(" The position of the char array is: " + charArray[4]);
+        System.out.println(" String st compares to st1 is: " + st.compareTo(st1));
+        System.out.println(" This String is Empty : " + st1.isEmpty());
+        System.out.println(" This String is Empty : " + st4.isEmpty());
+        System.out.println(" The value of the char is : " + st1.valueOf(st));
+        System.out.println(" The string st ends with : " + (st.endsWith("learn")));
+        System.out.println(" String Starts with : " + st.startsWith("Java"));
+        System.out.println(st.join("-", "Java", "is", "fun", "to", "learn"));
+        
+        st1= st1.copyValueOf(helloArray);
+        System.out.println(" New value of st1 is : "+ st1);
+
+        String str1 = "Hello World";
+        String str2 = "Hello World";
+        String str3 = "Hello World!!!".intern();
+        if(str1 == str2) {
+            System.out.println("String Str1 and str2 are the same");
+        }
+        if(str2 == str3) {
+            System.out.println("String Str2 and Str3 are the same");
+        }
+
+        }
+    }
+
